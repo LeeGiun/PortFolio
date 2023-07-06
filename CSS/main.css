@@ -10,6 +10,21 @@ a {text-decoration: none;}
 /* font-family: 'Single Day', cursive; */
 /* font-family: 'Orbit', sans-serif; */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   background-color: #000;
   position: relative;
@@ -391,6 +406,9 @@ canvas {
   float: left;
   overflow: hidden;
 }
+.midle_profile2 {
+  position: relative;
+}
 
 .midle_profile3 .Profile_Dev-Experience {
   margin-top: 145px;
@@ -612,45 +630,45 @@ canvas {
 
 
 
-.midle_profile4 {
+.midle_profile4_chart {
   width: 445px;
   height: 145px;
   position: absolute;
-  bottom: 50px;
-  right: 489px;
+  bottom: 25px;
+  right: 0px;
   border-radius: 30px;
   padding: 10px 20px;
   box-sizing: border-box;
   border: 1px solid #fff;
 }
 
-.midle_profile4 ul {
+.midle_profile4_chart ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.midle_profile4 ul li {
+.midle_profile4_chart ul li {
   line-height: 26.5px;
 }
-.midle_profile4 ul li:nth-child(1),/* E */
-.midle_profile4 ul li:nth-child(3),
-.midle_profile4 ul li:nth-child(4),
-.midle_profile4 ul li:nth-child(6),
-.midle_profile4 ul li:nth-child(7),
-.midle_profile4 ul li:nth-child(9),
-.midle_profile4 ul li:nth-child(10),
-.midle_profile4 ul li:nth-child(12) {
+.midle_profile4_chart ul li:nth-child(1),/* E */
+.midle_profile4_chart ul li:nth-child(3),
+.midle_profile4_chart ul li:nth-child(4),
+.midle_profile4_chart ul li:nth-child(6),
+.midle_profile4_chart ul li:nth-child(7),
+.midle_profile4_chart ul li:nth-child(9),
+.midle_profile4_chart ul li:nth-child(10),
+.midle_profile4_chart ul li:nth-child(12) {
   width: 50px;
   height: 26.5px;
   margin-bottom: 5px;
   font-size: 12px;
   text-align: center;
 }
-.midle_profile4 ul li:nth-child(2),
-.midle_profile4 ul li:nth-child(5),
-.midle_profile4 ul li:nth-child(8),
-.midle_profile4 ul li:nth-child(11) { /*게이지*/
+.midle_profile4_chart ul li:nth-child(2),
+.midle_profile4_chart ul li:nth-child(5),
+.midle_profile4_chart ul li:nth-child(8),
+.midle_profile4_chart ul li:nth-child(11) { /*게이지*/
   position: relative;
   width: 280px;
   margin: 0 10px;
@@ -658,10 +676,10 @@ canvas {
   text-align: center;
 }
 
-.midle_profile4 ul li:nth-child(2) div:nth-child(1),
-.midle_profile4 ul li:nth-child(5) div:nth-child(1),
-.midle_profile4 ul li:nth-child(8) div:nth-child(1),
-.midle_profile4 ul li:nth-child(11) div:nth-child(1) {
+.midle_profile4_chart ul li:nth-child(2) div:nth-child(1),
+.midle_profile4_chart ul li:nth-child(5) div:nth-child(1),
+.midle_profile4_chart ul li:nth-child(8) div:nth-child(1),
+.midle_profile4_chart ul li:nth-child(11) div:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -670,15 +688,15 @@ canvas {
   border-radius: 30px 0px 0px 30px;
   float: left;
 }
-.midle_profile4 ul li:nth-child(2) div:nth-child(1) {background-color: lightpink;}
-.midle_profile4 ul li:nth-child(5) div:nth-child(1) {background-color: #f998a6;}
-.midle_profile4 ul li:nth-child(8) div:nth-child(1) {background-color: #ff778b;}
-.midle_profile4 ul li:nth-child(11) div:nth-child(1) {background-color: #f55970;}
+.midle_profile4_chart ul li:nth-child(2) div:nth-child(1) {background-color: lightpink;}
+.midle_profile4_chart ul li:nth-child(5) div:nth-child(1) {background-color: #f998a6;}
+.midle_profile4_chart ul li:nth-child(8) div:nth-child(1) {background-color: #ff778b;}
+.midle_profile4_chart ul li:nth-child(11) div:nth-child(1) {background-color: #f55970;}
 
-.midle_profile4 ul li:nth-child(2) div:nth-child(2),
-.midle_profile4 ul li:nth-child(5) div:nth-child(2),
-.midle_profile4 ul li:nth-child(8) div:nth-child(2),
-.midle_profile4 ul li:nth-child(11) div:nth-child(2) {
+.midle_profile4_chart ul li:nth-child(2) div:nth-child(2),
+.midle_profile4_chart ul li:nth-child(5) div:nth-child(2),
+.midle_profile4_chart ul li:nth-child(8) div:nth-child(2),
+.midle_profile4_chart ul li:nth-child(11) div:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -688,29 +706,29 @@ canvas {
   border-radius: 0px 30px 30px 0px;
   float: left;
 }
-.midle_profile4 ul li:nth-child(2) div:nth-child(2) {background-color: #f55970;}
-.midle_profile4 ul li:nth-child(5) div:nth-child(2) {background-color: #ff778b;}
-.midle_profile4 ul li:nth-child(8) div:nth-child(2) {background-color: #f998a6;}
-.midle_profile4 ul li:nth-child(11) div:nth-child(2) {background-color: lightpink;}
+.midle_profile4_chart ul li:nth-child(2) div:nth-child(2) {background-color: #f55970;}
+.midle_profile4_chart ul li:nth-child(5) div:nth-child(2) {background-color: #ff778b;}
+.midle_profile4_chart ul li:nth-child(8) div:nth-child(2) {background-color: #f998a6;}
+.midle_profile4_chart ul li:nth-child(11) div:nth-child(2) {background-color: lightpink;}
 
 
 
 
-.midle_profile4 ul li:nth-child(5) div:nth-child(1) {width: 65%;}
-.midle_profile4 ul li:nth-child(5) div:nth-child(2) {width: 35%;}
+.midle_profile4_chart ul li:nth-child(5) div:nth-child(1) {width: 65%;}
+.midle_profile4_chart ul li:nth-child(5) div:nth-child(2) {width: 35%;}
 
-.midle_profile4 ul li:nth-child(8) div:nth-child(1) {width: 40%;}
-.midle_profile4 ul li:nth-child(8) div:nth-child(2) {width: 60%;}
+.midle_profile4_chart ul li:nth-child(8) div:nth-child(1) {width: 40%;}
+.midle_profile4_chart ul li:nth-child(8) div:nth-child(2) {width: 60%;}
 
-.midle_profile4 ul li:nth-child(11) div:nth-child(1) {width: 77%;}
-.midle_profile4 ul li:nth-child(11) div:nth-child(2) {width: 23%;}
+.midle_profile4_chart ul li:nth-child(11) div:nth-child(1) {width: 77%;}
+.midle_profile4_chart ul li:nth-child(11) div:nth-child(2) {width: 23%;}
 
-.midle_profile4 ul li div:first-child {
+.midle_profile4_chart ul li div:first-child {
   color: #eee;
   font-size: 12px;
   font-weight: bold;
 }
-.midle_profile4 ul li div:last-child {
+.midle_profile4_chart ul li div:last-child {
   color: #eee;
   font-size: 12px;
   font-weight: bold;
@@ -1170,7 +1188,7 @@ float: left;
 }
 
 .CodeReview_TabBox_Btn label {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   box-sizing: border-box;
@@ -1185,10 +1203,13 @@ float: left;
   border-radius: 5px;
 }
 
+
+
 /* 메인/서브/디테일 Btn */
 .LoginPageBtnBox,
 .SinglePageBtnBox,
-.TeamPageBtnBox {
+.TeamPageBtnBox,
+.ReactPageBtnBox {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -1211,7 +1232,8 @@ float: left;
 
 .LoginPageBtnBox:hover,
 .SinglePageBtnBox:hover,
-.TeamPageBtnBox:hover {
+.TeamPageBtnBox:hover,
+.ReactPageBtnBox:hover {
   animation: none;
 }
 
@@ -1222,19 +1244,21 @@ float: left;
 
 .LoginPageBtnBox div,
 .SinglePageBtnBox div,
-.TeamPageBtnBox div {
+.TeamPageBtnBox div,
+.ReactPageBtnBox div {
   margin-bottom: 5px;
   text-align: center;
   text-shadow: 2px 2px 5px #000;
 }
 .LoginPageBtnBox label,
 .SinglePageBtnBox label,
-.TeamPageBtnBox label {
+.TeamPageBtnBox label,
+.ReactPageBtnBox label {
   font-size: 12px;
 }
 
 .SinglePageBtnBox h2 {
-  font-size: 16px;
+  font-size: 14px;
   text-shadow: 1px 1px 3px #000;
   text-align: center;
 }
@@ -1244,8 +1268,7 @@ float: left;
 .CodeReview_Page1,
 .CodeReview_Page2,
 .CodeReview_Page3,
-.CodeReview_Page4,
-.CodeReview_Page5 {
+.CodeReview_Page4 {
   position: relative;
   display: none;
   /* display: flex;     디스플레이논 */
@@ -1260,10 +1283,6 @@ float: left;
   background-color: #000;
   overflow: hidden;
 }
-
-/* .CodeReview_Page1 {
-  display: flex;
-} */
 
 
 
@@ -1327,82 +1346,7 @@ float: left;
   padding: 15px;
   box-sizing: border-box;
 }
-.idia_sketch,
-.Project_Plan {
-  width: 770px;
-  margin: 25px 0 0px;
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: 0.3s;
-  float: left;
-}
-.Project_Plan {
-  margin-top: 10px;
-  height: 100px;
-}
 
-.idia_sketch_title,
-.Project_Plan_title {
-  position: relative;
-  z-index: 2;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  cursor: pointer;
-  border: 2px solid #aaa;
-  border-radius: 15px;
-  box-sizing: border-box;
-}
-.idia_sketch h1,
-.Project_Plan_title h1,
-.TeamProject_txt1 h1,
-.TeamProject_txt2 h1,
-.Project_scenario h1 {
-  color: #000;
-  margin: 25px 15px;
-  float: left;
-}
-.idia_sketch span,
-.Project_Plan_title span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  display: inline-block;
-  font-size: 20px;
-  height: 90px;
-}
-.idia_sketch span i,
-.Project_Plan_title span i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 52px;
-  height: 100%;
-  color: #000;
-}
-
-.CodeReview_content_txt {
-  flex: 3;
-  height: 800px;
-  background-color: #eee;
-}
-
-.TEAM_Img {
-  width: 100%;
-  height: 950px;
-  margin: 0 auto;
-  background-image: url(./BackImg/CodeImg/Ranking/RankingSwiper_CodeImg1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page_box2{
-  height: 0px;
-  overflow: hidden;
-}
 
 
 
@@ -1448,7 +1392,19 @@ float: left;
 .code_content_img_Ranking1,
 .code_content_img_SubItem1,
 .code_content_img_Fillter1,
-.code_content_img_Review1 {
+.code_content_img_Review1,
+.code_content_img_Login1,
+.code_content_img_Login2,
+.code_content_img_Login3,
+.code_content_img_Login4,
+.code_content_img_Single1,
+.code_content_img_Single2,
+.code_content_img_Single3,
+.code_content_img_Single4,
+.code_content_img_React1,
+.code_content_img_React2,
+.code_content_img_React3,
+.code_content_img_React4 {
   width: 800px;
   height: 850px;
   background-image: url(./BackImg/CodeImg/Ranking/codeBack.png);
@@ -1479,7 +1435,19 @@ float: left;
 .TEAM_Swiper,
 .SUB_Swiper,
 .FILLTER_Swiper,
-.REVIEW_Swiper {
+.REVIEW_Swiper,
+.LOGIN_Swiper1,
+.LOGIN_Swiper2,
+.LOGIN_Swiper3,
+.LOGIN_Swiper4,
+.SINGLE_Swiper1,
+.SINGLE_Swiper2,
+.SINGLE_Swiper3,
+.SINGLE_Swiper4,
+.REACT_Swiper1,
+.REACT_Swiper2,
+.REACT_Swiper3,
+.REACT_Swiper4 {
   position: relative;
   width: 750px;
   height: 800px;
@@ -1489,21 +1457,57 @@ float: left;
 }
 .TeamSwiper1,
 .SubSwiper1,
-.TeamSwiper1,
-.TeamSwiper1 {
+.FillterSwiper1,
+.ReviewSwiper1,
+.LoginSwiper1,
+.LoginSwiper2,
+.LoginSwiper3,
+.LoginSwiper4,
+.SingleSwiper1,
+.SingleSwiper2,
+.SingleSwiper3,
+.SingleSwiper4,
+.ReactSwiper1,
+.ReactSwiper2,
+.ReactSwiper3,
+.ReactSwiper4 {
   width: 100%;
   overflow: hidden;
 }
 .TEAM_Swiper .swiper-wrapper,
 .SUB_Swiper .swiper-wrapper,
 .FILLTER_Swiper .swiper-wrapper,
-.REVIEW_Swiper .swiper-wrapper {
+.REVIEW_Swiper .swiper-wrapper,
+.LOGIN_Swiper1 .swiper-wrapper,
+.LOGIN_Swiper2 .swiper-wrapper,
+.LOGIN_Swiper3 .swiper-wrapper,
+.LOGIN_Swiper4 .swiper-wrapper,
+.SINGLE_Swiper1 .swiper-wrapper,
+.SINGLE_Swiper2 .swiper-wrapper,
+.SINGLE_Swiper3 .swiper-wrapper,
+.SINGLE_Swiper4 .swiper-wrapper,
+.REACT_Swiper1 .swiper-wrapper,
+.REACT_Swiper2 .swiper-wrapper,
+.REACT_Swiper3 .swiper-wrapper,
+.REACT_Swiper4 .swiper-wrapper {
   width: 100%;
 }
 .TEAM_Swiper .swiper-slide,
 .SUB_Swiper .swiper-slide,
 .FILLTER_Swiper .swiper-slide,
-.REVIEW_Swiper .swiper-slide {
+.REVIEW_Swiper .swiper-slide,
+.LOGIN_Swiper1 .swiper-slide,
+.LOGIN_Swiper2 .swiper-slide,
+.LOGIN_Swiper3 .swiper-slide,
+.LOGIN_Swiper4 .swiper-slide,
+.SINGLE_Swiper1 .swiper-slide,
+.SINGLE_Swiper2 .swiper-slide,
+.SINGLE_Swiper3 .swiper-slide,
+.SINGLE_Swiper4 .swiper-slide,
+.REACT_Swiper1 .swiper-slide,
+.REACT_Swiper2 .swiper-slide,
+.REACT_Swiper3 .swiper-slide,
+.REACT_Swiper4 .swiper-slide {
   height: 700px;
   float: left;
   background-repeat: no-repeat;

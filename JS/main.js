@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+
+
 /* 인트로 페이지 타이핑효과 */
   const typed = new Typed('.visualMain h1', {
     strings: ['The First Step for Front-End Developers. . . . . . !', '프론트엔드 개발자의 첫걸음을 위한 저의 포트폴리오 방문을 환영합니다!'],
@@ -585,6 +587,599 @@ CodeTit4.addEventListener('click', function () {
 })
 
 
+// ================================================
+// ================================================
+/* 로그인 컨텐츠 1 */
+function LoginSWP1() {
+  let swiper = new Swiper(".LoginSwiper1", {
+    pagination: {
+      el: ".LoginSwiper1 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".LoginSwiper1 .swiper-button-next",
+      prevEl: ".LoginSwiper1 .swiper-button-prev",
+    },
+  });
+}
+
+LoginSWP1();
+
+
+const CodeImg5 = document.querySelector('.code_content_img_Login1')
+const CodeTxt5 = document.querySelector('.code_content_txt_Login1')
+
+const CodeTit5 = document.querySelector('.tit_Login1 h1')
+
+const LoginSwiper1 = document.querySelector('.LOGIN_Swiper1')
+let CodeClick5 = 0
+
+CodeTit5.addEventListener('click', function () {
+  if (CodeClick5 === 0) {
+    CodeTxt5.style.height = '0px'
+    CodeImg5.style.height = '0px'
+    CodeTxt5.style.opacity = '0'
+    CodeImg5.style.opacity = '0'
+    LoginSwiper1.style.opacity = '0'
+    CodeClick5 = 1
+  } else if (CodeClick5 === 1) {
+    CodeTxt5.style.height = '800px'
+    CodeImg5.style.height = '800px'
+    CodeTxt5.style.opacity = '1'
+    CodeImg5.style.opacity = '1'
+    LoginSwiper1.style.opacity = '1'
+    CodeClick5 = 0
+  }
+})
+
+
+// =======================================
+/* 로그인컨텐츠 2 */
+
+function LoginSWP2() {
+  let swiper = new Swiper(".LoginSwiper2", {
+    pagination: {
+      el: ".LoginSwiper2 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".LoginSwiper2 .swiper-button-next",
+      prevEl: ".LoginSwiper2 .swiper-button-prev",
+    },
+  });
+}
+
+LoginSWP2();
+
+
+const CodeImg6 = document.querySelector('.code_content_img_Login2')
+const CodeTxt6 = document.querySelector('.code_content_txt_Login2')
+
+const CodeTit6 = document.querySelector('.tit_Login2 h1')
+
+const LoginSwiper2 = document.querySelector('.LOGIN_Swiper2')
+let CodeClick6 = 0
+
+CodeTit6.addEventListener('click', function () {
+  if (CodeClick6 === 0) {
+    CodeTxt6.style.height = '0px'
+    CodeImg6.style.height = '0px'
+    CodeTxt6.style.opacity = '0'
+    CodeImg6.style.opacity = '0'
+    LoginSwiper2.style.opacity = '0'
+    CodeClick6 = 1
+  } else if (CodeClick6 === 1) {
+    CodeTxt6.style.height = '800px'
+    CodeImg6.style.height = '800px'
+    CodeTxt6.style.opacity = '1'
+    CodeImg6.style.opacity = '1'
+    LoginSwiper2.style.opacity = '1'
+    CodeClick6 = 0
+  }
+})
+
+
+// =======================================
+/* 로그인컨텐츠3 */
+function LoginSWP3() {
+  let swiper = new Swiper(".LoginSwiper3", {
+    pagination: {
+      el: ".LoginSwiper3 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".LoginSwiper3 .swiper-button-next",
+      prevEl: ".LoginSwiper3 .swiper-button-prev",
+    },
+  });
+}
+
+LoginSWP3();
+
+
+const CodeImg7 = document.querySelector('.code_content_img_Login3')
+const CodeTxt7 = document.querySelector('.code_content_txt_Login3')
+
+const CodeTit7 = document.querySelector('.tit_Login3 h1')
+
+const LoginSwiper3 = document.querySelector('.LOGIN_Swiper3')
+let CodeClick7 = 0
+
+CodeTit7.addEventListener('click', function () {
+  if (CodeClick7 === 0) {
+    CodeTxt7.style.height = '0px'
+    CodeImg7.style.height = '0px'
+    CodeTxt7.style.opacity = '0'
+    CodeImg7.style.opacity = '0'
+    LoginSwiper3.style.opacity = '0'
+    CodeClick7 = 1
+  } else if (CodeClick7 === 1) {
+    CodeTxt7.style.height = '800px'
+    CodeImg7.style.height = '800px'
+    CodeTxt7.style.opacity = '1'
+    CodeImg7.style.opacity = '1'
+    LoginSwiper3.style.opacity = '1'
+    CodeClick7 = 0
+  }
+})
+
+
+// =======================================
+/* 로그인컨텐츠4 */
+
+
+function LoginSWP4() {
+  let swiper = new Swiper(".LoginSwiper4", {
+    pagination: {
+      el: ".LoginSwiper4 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".LoginSwiper4 .swiper-button-next",
+      prevEl: ".LoginSwiper4 .swiper-button-prev",
+    },
+  });
+}
+
+LoginSWP4();
+
+
+const CodeImg8 = document.querySelector('.code_content_img_Login4')
+const CodeTxt8 = document.querySelector('.code_content_txt_Login4')
+
+const CodeTit8 = document.querySelector('.tit_Login4 h1')
+
+const LoginSwiper4 = document.querySelector('.LOGIN_Swiper4')
+let CodeClick8 = 0
+
+CodeTit8.addEventListener('click', function () {
+  if (CodeClick8 === 0) {
+    CodeTxt8.style.height = '0px'
+    CodeImg8.style.height = '0px'
+    CodeTxt8.style.opacity = '0'
+    CodeImg8.style.opacity = '0'
+    LoginSwiper4.style.opacity = '0'
+    CodeClick8 = 1
+  } else if (CodeClick8 === 1) {
+    CodeTxt8.style.height = '800px'
+    CodeImg8.style.height = '800px'
+    CodeTxt8.style.opacity = '1'
+    CodeImg8.style.opacity = '1'
+    LoginSwiper4.style.opacity = '1'
+    CodeClick8 = 0
+  }
+})
+
+
+
+
+// ================================================
+// ================================================
+/* 개인프로젝트 컨텐츠 1 */
+function SINGLESWP1() {
+  let swiper = new Swiper(".SingleSwiper1", {
+    pagination: {
+      el: ".SingleSwiper1 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".SingleSwiper1 .swiper-button-next",
+      prevEl: ".SingleSwiper1 .swiper-button-prev",
+    },
+  });
+}
+
+SINGLESWP1();
+
+
+const CodeImg9 = document.querySelector('.code_content_img_Single1')
+const CodeTxt9 = document.querySelector('.code_content_txt_Single1')
+
+const CodeTit9 = document.querySelector('.tit_Single1 h1')
+
+const SingleSwiper1 = document.querySelector('.SINGLE_Swiper1')
+let CodeClick9 = 0
+
+CodeTit9.addEventListener('click', function () {
+  if (CodeClick9 === 0) {
+    CodeTxt9.style.height = '0px'
+    CodeImg9.style.height = '0px'
+    CodeTxt9.style.opacity = '0'
+    CodeImg9.style.opacity = '0'
+    SingleSwiper1.style.opacity = '0'
+    CodeClick9 = 1
+  } else if (CodeClick9 === 1) {
+    CodeTxt9.style.height = '800px'
+    CodeImg9.style.height = '800px'
+    CodeTxt9.style.opacity = '1'
+    CodeImg9.style.opacity = '1'
+    SingleSwiper1.style.opacity = '1'
+    CodeClick9 = 0
+  }
+})
+
+
+
+
+
+// ================================================
+/* 개인프로젝트 컨텐츠 2 */
+function SINGLESWP2() {
+  let swiper = new Swiper(".SingleSwiper2", {
+    pagination: {
+      el: ".SingleSwiper2 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".SingleSwiper2 .swiper-button-next",
+      prevEl: ".SingleSwiper2 .swiper-button-prev",
+    },
+  });
+}
+
+SINGLESWP2();
+
+
+const CodeImg10 = document.querySelector('.code_content_img_Single2')
+const CodeTxt10 = document.querySelector('.code_content_txt_Single2')
+
+const CodeTit10 = document.querySelector('.tit_Single2 h1')
+
+const SingleSwiper2 = document.querySelector('.SINGLE_Swiper2')
+let CodeClick10 = 0
+
+CodeTit10.addEventListener('click', function () {
+  if (CodeClick10 === 0) {
+    CodeTxt10.style.height = '0px'
+    CodeImg10.style.height = '0px'
+    CodeTxt10.style.opacity = '0'
+    CodeImg10.style.opacity = '0'
+    SingleSwiper2.style.opacity = '0'
+    CodeClick10 = 1
+  } else if (CodeClick10 === 1) {
+    CodeTxt10.style.height = '800px'
+    CodeImg10.style.height = '800px'
+    CodeTxt10.style.opacity = '1'
+    CodeImg10.style.opacity = '1'
+    SingleSwiper2.style.opacity = '1'
+    CodeClick10 = 0
+  }
+})
+
+
+
+
+
+
+
+// ================================================
+/* 개인프로젝트 컨텐츠 3 */
+function SINGLESWP3() {
+  let swiper = new Swiper(".SingleSwiper3", {
+    pagination: {
+      el: ".SingleSwiper3 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".SingleSwiper3 .swiper-button-next",
+      prevEl: ".SingleSwiper3 .swiper-button-prev",
+    },
+  });
+}
+
+SINGLESWP3();
+
+
+const CodeImg11 = document.querySelector('.code_content_img_Single3')
+const CodeTxt11 = document.querySelector('.code_content_txt_Single3')
+
+const CodeTit11 = document.querySelector('.tit_Single3 h1')
+
+const SingleSwiper3 = document.querySelector('.SINGLE_Swiper3')
+let CodeClick11 = 0
+
+CodeTit11.addEventListener('click', function () {
+  if (CodeClick11 === 0) {
+    CodeTxt11.style.height = '0px'
+    CodeImg11.style.height = '0px'
+    CodeTxt11.style.opacity = '0'
+    CodeImg11.style.opacity = '0'
+    SingleSwiper3.style.opacity = '0'
+    CodeClick11 = 1
+  } else if (CodeClick11 === 1) {
+    CodeTxt11.style.height = '800px'
+    CodeImg11.style.height = '800px'
+    CodeTxt11.style.opacity = '1'
+    CodeImg11.style.opacity = '1'
+    SingleSwiper3.style.opacity = '1'
+    CodeClick11 = 0
+  }
+})
+
+
+
+
+
+
+
+// ================================================
+/* 개인프로젝트 컨텐츠 4 */
+function SINGLESWP4() {
+  let swiper = new Swiper(".SingleSwiper4", {
+    pagination: {
+      el: ".SingleSwiper4 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".SingleSwiper4 .swiper-button-next",
+      prevEl: ".SingleSwiper4 .swiper-button-prev",
+    },
+  });
+}
+
+SINGLESWP4();
+
+
+const CodeImg12 = document.querySelector('.code_content_img_Single4')
+const CodeTxt12 = document.querySelector('.code_content_txt_Single4')
+
+const CodeTit12 = document.querySelector('.tit_Single4 h1')
+
+const SingleSwiper4 = document.querySelector('.SINGLE_Swiper4')
+let CodeClick12 = 0
+
+CodeTit12.addEventListener('click', function () {
+  if (CodeClick12 === 0) {
+    CodeTxt12.style.height = '0px'
+    CodeImg12.style.height = '0px'
+    CodeTxt12.style.opacity = '0'
+    CodeImg12.style.opacity = '0'
+    SingleSwiper4.style.opacity = '0'
+    CodeClick12 = 1
+  } else if (CodeClick12 === 1) {
+    CodeTxt12.style.height = '800px'
+    CodeImg12.style.height = '800px'
+    CodeTxt12.style.opacity = '1'
+    CodeImg12.style.opacity = '1'
+    SingleSwiper4.style.opacity = '1'
+    CodeClick12 = 0
+  }
+})
+
+
+
+
+
+
+
+
+
+// ================================================
+// ================================================
+/* 리액트프로젝트 컨텐츠 1 */
+
+function ReactSWP1() {
+  let swiper = new Swiper(".ReactSwiper1", {
+    pagination: {
+      el: ".ReactSwiper1 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".ReactSwiper1 .swiper-button-next",
+      prevEl: ".ReactSwiper1 .swiper-button-prev",
+    },
+  });
+}
+
+ReactSWP1();
+
+
+const CodeImg13 = document.querySelector('.code_content_img_React1')
+const CodeTxt13 = document.querySelector('.code_content_txt_React1')
+
+const CodeTit13 = document.querySelector('.tit_React1 h1')
+
+const ReactSwiper1 = document.querySelector('.REACT_Swiper1')
+let CodeClick13 = 0
+
+CodeTit13.addEventListener('click', function () {
+  if (CodeClick13 === 0) {
+    CodeTxt13.style.height = '0px'
+    CodeImg13.style.height = '0px'
+    CodeTxt13.style.opacity = '0'
+    CodeImg13.style.opacity = '0'
+    ReactSwiper1.style.opacity = '0'
+    CodeClick13 = 1
+  } else if (CodeClick13 === 1) {
+    CodeTxt13.style.height = '800px'
+    CodeImg13.style.height = '800px'
+    CodeTxt13.style.opacity = '1'
+    CodeImg13.style.opacity = '1'
+    ReactSwiper1.style.opacity = '1'
+    CodeClick13 = 0
+  }
+})
+
+
+
+
+
+// ================================================
+/* 리액트프로젝트 컨텐츠 2 */
+function ReactSWP2() {
+  let swiper = new Swiper(".ReactSwiper2", {
+    pagination: {
+      el: ".ReactSwiper2 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".ReactSwiper2 .swiper-button-next",
+      prevEl: ".ReactSwiper2 .swiper-button-prev",
+    },
+  });
+}
+
+ReactSWP2();
+
+
+const CodeImg14 = document.querySelector('.code_content_img_React2')
+const CodeTxt14 = document.querySelector('.code_content_txt_React2')
+
+const CodeTit14 = document.querySelector('.tit_React2 h1')
+
+const ReactSwiper2 = document.querySelector('.REACT_Swiper2')
+let CodeClick14 = 0
+
+CodeTit14.addEventListener('click', function () {
+  if (CodeClick14 === 0) {
+    CodeTxt14.style.height = '0px'
+    CodeImg14.style.height = '0px'
+    CodeTxt14.style.opacity = '0'
+    CodeImg14.style.opacity = '0'
+    ReactSwiper2.style.opacity = '0'
+    CodeClick14 = 1
+  } else if (CodeClick14 === 1) {
+    CodeTxt14.style.height = '800px'
+    CodeImg14.style.height = '800px'
+    CodeTxt14.style.opacity = '1'
+    CodeImg14.style.opacity = '1'
+    ReactSwiper2.style.opacity = '1'
+    CodeClick14 = 0
+  }
+})
+
+
+
+
+
+
+
+// ================================================
+/* 리액트프로젝트 컨텐츠 3 */
+
+
+function ReactSWP3() {
+  let swiper = new Swiper(".ReactSwiper3", {
+    pagination: {
+      el: ".ReactSwiper3 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".ReactSwiper3 .swiper-button-next",
+      prevEl: ".ReactSwiper3 .swiper-button-prev",
+    },
+  });
+}
+
+ReactSWP3();
+
+
+const CodeImg15 = document.querySelector('.code_content_img_React3')
+const CodeTxt15 = document.querySelector('.code_content_txt_React3')
+
+const CodeTit15 = document.querySelector('.tit_React3 h1')
+
+const ReactSwiper3 = document.querySelector('.REACT_Swiper3')
+let CodeClick15 = 0
+
+CodeTit15.addEventListener('click', function () {
+  if (CodeClick15 === 0) {
+    CodeTxt15.style.height = '0px'
+    CodeImg15.style.height = '0px'
+    CodeTxt15.style.opacity = '0'
+    CodeImg15.style.opacity = '0'
+    ReactSwiper3.style.opacity = '0'
+    CodeClick15 = 1
+  } else if (CodeClick15 === 1) {
+    CodeTxt15.style.height = '800px'
+    CodeImg15.style.height = '800px'
+    CodeTxt15.style.opacity = '1'
+    CodeImg15.style.opacity = '1'
+    ReactSwiper3.style.opacity = '1'
+    CodeClick15 = 0
+  }
+})
+
+
+
+
+
+
+
+// ================================================
+/* 리액트프로젝트 컨텐츠 4 */
+function ReactSWP4() {
+  let swiper = new Swiper(".ReactSwiper4", {
+    pagination: {
+      el: ".ReactSwiper4 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".ReactSwiper4 .swiper-button-next",
+      prevEl: ".ReactSwiper4 .swiper-button-prev",
+    },
+  });
+}
+
+ReactSWP4();
+
+
+const CodeImg16 = document.querySelector('.code_content_img_React4')
+const CodeTxt16 = document.querySelector('.code_content_txt_React4')
+
+const CodeTit16 = document.querySelector('.tit_React4 h1')
+
+const ReactSwiper4 = document.querySelector('.REACT_Swiper4')
+let CodeClick16 = 0
+
+CodeTit16.addEventListener('click', function () {
+  if (CodeClick16 === 0) {
+    CodeTxt16.style.height = '0px'
+    CodeImg16.style.height = '0px'
+    CodeTxt16.style.opacity = '0'
+    CodeImg16.style.opacity = '0'
+    ReactSwiper4.style.opacity = '0'
+    CodeClick16 = 1
+  } else if (CodeClick16 === 1) {
+    CodeTxt16.style.height = '800px'
+    CodeImg16.style.height = '800px'
+    CodeTxt16.style.opacity = '1'
+    CodeImg16.style.opacity = '1'
+    ReactSwiper4.style.opacity = '1'
+    CodeClick16 = 0
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -734,8 +1329,7 @@ const CodeTab = [
   document.querySelector('.Tab1'),
   document.querySelector('.Tab2'),
   document.querySelector('.Tab3'),
-  document.querySelector('.Tab4'),
-  document.querySelector('.Tab5'),
+  document.querySelector('.Tab4')
 ]
 
 const CodeTabMenuLi = document.querySelectorAll('.CodeReview_TabMenu li')
@@ -779,6 +1373,10 @@ const CodeTabMenuLi = document.querySelectorAll('.CodeReview_TabMenu li')
       })
     })
   })
+
+
+
+
 
 
 
