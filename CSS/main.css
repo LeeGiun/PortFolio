@@ -803,7 +803,7 @@ float: left;
   z-index: 2;
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 75px;
   margin-top: 20px;
   border-radius: 15px;
   overflow: hidden;
@@ -865,14 +865,16 @@ float: left;
 .jQuery_img,
 .React_img,
 .Sass_img,
+.JSX_img,
+.Bootstrap_img,
 .VScode_img,
 .GitHub_img,
 .XD_img,
 .Git_img {
   width: 20%;
-  height: 100px;
+  height: 75px;
   background-color: #fff;
-  background-size: 70%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px 0px 0px 10px;
@@ -885,12 +887,15 @@ float: left;
 .jQuery_img {background-image: url(./BackImg/jQuery.png);}
 .React_img {background-image: url(./BackImg/React.png);}
 .Sass_img {background-image: url(./BackImg/SASS.png);}
+.JSX_img {background-image: url(./BackImg/JSX.png);}
+.Bootstrap_img {background-image: url(./BackImg/Bootstrap.png);}
 .VScode_img {background-image: url(./BackImg/VScode.png);}
 .GitHub_img {background-image: url(./BackImg/GitHub.png);}
 .Git_img {background-image: url(./BackImg/Git.png);}
 .XD_img {background-image: url(./BackImg/XD.png);}
 
-.Skills_txt {
+.Skills_txt,
+.Bootstrap_txt {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -899,6 +904,7 @@ float: left;
   height: 100%;
   font-size: 40px;
   padding: 10px;
+  padding-top: 6px;
   box-sizing: border-box;
   background-color: #fff;
   color: #000;
@@ -907,6 +913,12 @@ float: left;
   transition: 0.3s;
   overflow: hidden;
 }
+.Bootstrap_txt .BootColor {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
 .HTML_txt {
   opacity: 0;
 }
@@ -1020,7 +1032,128 @@ float: left;
   border-radius: 0px 0px 5px 5px;
   padding: 20px;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
+.useSkill {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+  position: absolute;
+  left: 20px;
+  bottom: 13px;
+  width: 960px;
+  height: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0px 0px;
+  background-color: rgba(255,255,255,0.8);
+  backdrop-filter: blur(3px);
+  transition: 0.3s;
+}
+.useSkill_open {
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  bottom: 13px;
+  left: 440px;
+  width: 120px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.8);
+  backdrop-filter:blur(3px);
+  color: #000;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #777;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.useSkill_open:hover {
+  color: orangered;
+}
+.useSkill_close {
+  position: absolute;
+  top: -40px;
+  left: 420px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgba(255,255,255,0.8);
+  backdrop-filter:blur(3px);
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #777;
+  cursor: pointer;
+  color: #000;
+}
+.useSkill_close:hover {
+  color: blue;
+}
+.useSkill_Box {
+  width: 110px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-sizing: border-box;
+}
+
+.useSkill1 {
+  background-image: url(./BackImg/HTML5.png);
+}
+.useSkill2 {
+  background-image: url(./BackImg/SASS.png)
+}
+.useSkill3 {
+  background-image: url(./BackImg/jQuery.png)
+}
+.useSkill4 {
+  background-image: url(./BackImg/JS.png)
+}
+.useSkill5 {
+  background-image: url(./BackImg/Git.png)
+}
+.useSkill6 {
+  background-image: url(./BackImg/GitHub.png)
+}
+.useSkill7 {
+  background-image: url(./BackImg/VScode.png)
+}
+.useSkill8 {
+  background-image: url(./BackImg/XD.png)
+}
+.useSkill9 {
+  background-image: url(./BackImg/React.png)
+}
+.useSkill10 {
+  background-image: url(./BackImg/JSX.png)
+}
+.useSkill11 {
+  background-image: url(./BackImg/Bootstrap.png)
+}
+
+.Login_CSS {
+  background-image: url(./BackImg/CSS3.png);
+}
+
+
+
+
+
+
+
 .CodeReview_TabBox1,
 .CodeReview_TabBox2,
 .CodeReview_TabBox3,

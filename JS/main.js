@@ -206,6 +206,8 @@ headerMenuLI.forEach((li, index) => {
     document.querySelector('.Framework_Library_jQuery'),
     document.querySelector('.Framework_Library_React'),
     document.querySelector('.Framework_Library_ParceLnSass'),
+    document.querySelector('.Framework_Library_JSX'),
+    document.querySelector('.Framework_Library_Bootstrap'),
     document.querySelector('.Editor_Tool_VScode'),
     document.querySelector('.Editor_Tool_Git_Hub'),
     document.querySelector('.Editor_Tool_Git'),
@@ -221,6 +223,8 @@ headerMenuLI.forEach((li, index) => {
     document.querySelector('.Framework_Library_jQuery h4'),
     document.querySelector('.Framework_Library_React h4'),
     document.querySelector('.Framework_Library_ParceLnSass h4'),
+    document.querySelector('.Framework_Library_JSX h4'),
+    document.querySelector('.Framework_Library_Bootstrap h4'),
     document.querySelector('.Editor_Tool_VScode h4'),
     document.querySelector('.Editor_Tool_Git_Hub h4'),
     document.querySelector('.Editor_Tool_Git h4'),
@@ -235,6 +239,8 @@ headerMenuLI.forEach((li, index) => {
     document.querySelector('.jQuery_txt'),
     document.querySelector('.React_txt'),
     document.querySelector('.Sass_txt'),
+    document.querySelector('.JSX_txt'),
+    document.querySelector('.Bootstrap_txt'),
     document.querySelector('.VScode_txt'),
     document.querySelector('.GitHub_txt'),
     document.querySelector('.Git_txt'),
@@ -311,16 +317,30 @@ headerMenuLI.forEach((li, index) => {
         });
 
         barProgress.eq(4).animate({
-          width: "50%"
+          width: "80%"
         }, 1500);
         barProgress.eq(4).find(".ui-progressbar-value").css({
           "background": "#DDDDDDD"
         });
 
         barProgress.eq(5).animate({
-          width: "80%"
+          width: "50%"
         }, 1500);
         barProgress.eq(5).find(".ui-progressbar-value").css({
+          "background": "#DDDDDDD"
+        });
+
+        barProgress.eq(6).animate({
+          width: "70%"
+        }, 1500);
+        barProgress.eq(6).find(".ui-progressbar-value").css({
+          "background": "#DDDDDDD"
+        });
+
+        barProgress.eq(7).animate({
+          width: "60%"
+        }, 1500);
+        barProgress.eq(7).find(".ui-progressbar-value").css({
           "background": "#DDDDDDD"
         });
       }
@@ -394,7 +414,89 @@ headerMenuLI.forEach((li, index) => {
 
 
 
+  /* 팀프로젝트 사용스킬 펼치기/접기 */
 
+  const CodeTabMenuLi = document.querySelectorAll('.CodeReview_TabMenu li') 
+
+  const useSkillClose = [
+    document.querySelector('.Tab1 .useSkill_close'),
+    document.querySelector('.Tab2 .useSkill_close'),
+    document.querySelector('.Tab3 .useSkill_close'),
+    document.querySelector('.Tab4 .useSkill_close'),
+  ]
+  const useSkillOpen = [
+    document.querySelector('.Tab1 .useSkill_open'),
+    document.querySelector('.Tab2 .useSkill_open'),
+    document.querySelector('.Tab3 .useSkill_open'),
+    document.querySelector('.Tab4 .useSkill_open'),
+  ]
+
+  const useSkill = [
+    document.querySelector('.Tab1 .useSkill'),
+    document.querySelector('.Tab2 .useSkill'),
+    document.querySelector('.Tab3 .useSkill'),
+    document.querySelector('.Tab4 .useSkill'),
+  ]
+
+
+
+  useSkillClose.forEach((close, index) => {
+    close.addEventListener('click', function() {
+      useSkill.forEach((Box, i) => {
+        Box.style.bottom = '-200px'
+        Box.style.opacity = '0'
+        Box.style.zIndex = '1'
+        useSkillOpen[i].style.opacity = '1'
+        useSkillOpen[i].style.bottom = '13px'
+        useSkillOpen[i].style.zIndex = '2'
+      })
+    })
+  })
+
+  useSkillOpen.forEach((open, index) => {
+    open.addEventListener('click', function() {
+      useSkill.forEach((Box2, j) => {
+        Box2.style.bottom = '13px'
+        Box2.style.opacity = '1'
+        Box2.style.zIndex = '2'
+        useSkillOpen[j].style.opacity = '0'
+        useSkillOpen[j].style.bottom = '200px'
+        useSkillOpen[j].style.zIndex = '1'
+      })
+    })
+  })
+
+  CodeTabMenuLi.forEach((liClick, index) => {
+    liClick.addEventListener('click', function() {
+      useSkill.forEach((Box3, p) => {
+        Box3.style.bottom = '13px'
+        Box3.style.opacity = '1'
+        Box3.style.zIndex = '2'
+      })
+    })
+  })
+  
+
+
+/* 
+  useSkillClose.addEventListener('click', function() {
+    useSkill.style.bottom = '-200px'
+    useSkill.style.opacity = '0'
+    useSkill.style.zIndex = '1'
+    useSkillOpen[0].style.opacity = '1'
+    useSkillOpen[0].style.bottom = '13px'
+    useSkillOpen[0].style.zIndex = '2'
+  }) */
+/* 
+  useSkillOpen.addEventListener('click', function() {
+    useSkill.style.bottom = '13px'
+    useSkill.style.opacity = '1'
+    useSkill.style.zIndex = '2'
+    useSkillOpen[0].style.opacity = '0'
+    useSkillOpen[0].style.bottom = '200px'
+    useSkillOpen[0].style.zIndex = '1'
+  })
+ */
 
 
 
@@ -1332,7 +1434,7 @@ const CodeTab = [
   document.querySelector('.Tab4')
 ]
 
-const CodeTabMenuLi = document.querySelectorAll('.CodeReview_TabMenu li')
+
 
   CodeTabMenuLi.forEach((el, index) => {
     el.addEventListener('click', function() {
