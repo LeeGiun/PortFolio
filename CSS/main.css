@@ -1530,6 +1530,8 @@ float: left;
 .code_content_img_Login2,
 .code_content_img_Login3,
 .code_content_img_Login4,
+.code_content_img_Login5,
+.code_content_img_Login6,
 .code_content_img_Single1,
 .code_content_img_Single2,
 .code_content_img_Single3,
@@ -1573,6 +1575,8 @@ float: left;
 .LOGIN_Swiper2,
 .LOGIN_Swiper3,
 .LOGIN_Swiper4,
+.LOGIN_Swiper5,
+.LOGIN_Swiper6,
 .SINGLE_Swiper1,
 .SINGLE_Swiper2,
 .SINGLE_Swiper3,
@@ -1596,6 +1600,8 @@ float: left;
 .LoginSwiper2,
 .LoginSwiper3,
 .LoginSwiper4,
+.LoginSwiper5,
+.LoginSwiper6,
 .SingleSwiper1,
 .SingleSwiper2,
 .SingleSwiper3,
@@ -1615,6 +1621,8 @@ float: left;
 .LOGIN_Swiper2 .swiper-wrapper,
 .LOGIN_Swiper3 .swiper-wrapper,
 .LOGIN_Swiper4 .swiper-wrapper,
+.LOGIN_Swiper5 .swiper-wrapper,
+.LOGIN_Swiper6 .swiper-wrapper,
 .SINGLE_Swiper1 .swiper-wrapper,
 .SINGLE_Swiper2 .swiper-wrapper,
 .SINGLE_Swiper3 .swiper-wrapper,
@@ -1633,6 +1641,8 @@ float: left;
 .LOGIN_Swiper2 .swiper-slide,
 .LOGIN_Swiper3 .swiper-slide,
 .LOGIN_Swiper4 .swiper-slide,
+.LOGIN_Swiper5 .swiper-slide,
+.LOGIN_Swiper6 .swiper-slide,
 .SINGLE_Swiper1 .swiper-slide,
 .SINGLE_Swiper2 .swiper-slide,
 .SINGLE_Swiper3 .swiper-slide,
@@ -1647,6 +1657,12 @@ float: left;
   background-size: 100%;
   overflow: hidden;
 }
+
+
+
+/* ======================================================================= */
+/* ======================================================================= */
+/* 팀프로젝트 */
 
 .TEAM_Swiper .swiper-slide:nth-child(1) {
   background-image: url(./BackImg/CodeImg/Ranking/RankingSwiper_content.jpg);
@@ -1732,6 +1748,56 @@ float: left;
 .REVIEW_Swiper .swiper-slide:nth-child(6) {
   background-image: url(./BackImg/CodeImg/Review/Review_CodeImg5.png);
 }
+
+
+/* ======================================================================= */
+/* ======================================================================= */
+/* 로그인 구현 */
+.LOGIN_Swiper1 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/2.Login/Login_main/Login_main1.jpg);}
+.LOGIN_Swiper1 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/2.Login/Login_main/Login_main2.jpg);}
+
+.LOGIN_Swiper2 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/2.Login/ID_PW/ID_PW1-1.jpg);}
+.LOGIN_Swiper2 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/2.Login/ID_PW/ID_PW1.jpg);}
+
+.LOGIN_Swiper3 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join1-1.jpg);}
+.LOGIN_Swiper3 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join1.jpg);}
+
+.LOGIN_Swiper4 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join2-1.jpg);}
+.LOGIN_Swiper4 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join2.jpg);}
+
+.LOGIN_Swiper5 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join3-1.jpg);}
+.LOGIN_Swiper5 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join3.jpg);}
+
+.LOGIN_Swiper6 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join4\,5-1.jpg);}
+.LOGIN_Swiper6 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join4.jpg);}
+.LOGIN_Swiper6 .swiper-slide:nth-child(3) {background-image: url(./BackImg/CodeImg/2.Login/Join/Join5.jpg);}
+
+
+
+
+/* ======================================================================= */
+/* ======================================================================= */
+/* 개인프로젝트 */
+.SINGLE_Swiper1 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single1-1.jpg);}
+.SINGLE_Swiper1 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single1.jpg);}
+
+.SINGLE_Swiper2 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single2-1.jpg);}
+.SINGLE_Swiper2 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single2.jpg);}
+
+.SINGLE_Swiper3 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single3-1.gif);}
+.SINGLE_Swiper3 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single3.jpg);}
+.SINGLE_Swiper3 .swiper-slide{background-position: center;}
+
+.SINGLE_Swiper4 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single4-1.gif);}
+.SINGLE_Swiper4 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single4.jpg);}
+.SINGLE_Swiper4 .swiper-slide{background-position: center;}
+
+/* ======================================================================= */
+/* ======================================================================= */
+/* 리액트프로젝트 */
+
+
+
 
 
 

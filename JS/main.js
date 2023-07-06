@@ -875,6 +875,111 @@ CodeTit8.addEventListener('click', function () {
 
 
 
+// =======================================
+/* 로그인컨텐츠5 */
+
+
+function LoginSWP5() {
+  let swiper = new Swiper(".LoginSwiper5", {
+    pagination: {
+      el: ".LoginSwiper5 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".LoginSwiper5 .swiper-button-next",
+      prevEl: ".LoginSwiper5 .swiper-button-prev",
+    },
+  });
+}
+
+LoginSWP5();
+
+
+const CodeImg17 = document.querySelector('.code_content_img_Login5')
+const CodeTxt17 = document.querySelector('.code_content_txt_Login5')
+
+const CodeTit17 = document.querySelector('.tit_Login5 h1')
+
+const LoginSwiper5 = document.querySelector('.LOGIN_Swiper5')
+let CodeClick17 = 0
+
+CodeTit17.addEventListener('click', function () {
+  if (CodeClick17 === 0) {
+    CodeTxt17.style.height = '0px'
+    CodeImg17.style.height = '0px'
+    CodeTxt17.style.opacity = '0'
+    CodeImg17.style.opacity = '0'
+    LoginSwiper5.style.opacity = '0'
+    CodeClick17 = 1
+  } else if (CodeClick17 === 1) {
+    CodeTxt17.style.height = '800px'
+    CodeImg17.style.height = '800px'
+    CodeTxt17.style.opacity = '1'
+    CodeImg17.style.opacity = '1'
+    LoginSwiper5.style.opacity = '1'
+    CodeClick17 = 0
+  }
+})
+
+
+
+
+
+// =======================================
+/* 로그인컨텐츠6 */
+
+
+function LoginSWP6() {
+  let swiper = new Swiper(".LoginSwiper6", {
+    pagination: {
+      el: ".LoginSwiper6 .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".LoginSwiper6 .swiper-button-next",
+      prevEl: ".LoginSwiper6 .swiper-button-prev",
+    },
+  });
+}
+
+LoginSWP6();
+
+
+const CodeImg18 = document.querySelector('.code_content_img_Login6')
+const CodeTxt18 = document.querySelector('.code_content_txt_Login6')
+
+const CodeTit18 = document.querySelector('.tit_Login6 h1')
+
+const LoginSwiper6 = document.querySelector('.LOGIN_Swiper6')
+let CodeClick18 = 0
+
+CodeTit18.addEventListener('click', function () {
+  if (CodeClick18 === 0) {
+    CodeTxt18.style.height = '0px'
+    CodeImg18.style.height = '0px'
+    CodeTxt18.style.opacity = '0'
+    CodeImg18.style.opacity = '0'
+    LoginSwiper6.style.opacity = '0'
+    CodeClick18 = 1
+  } else if (CodeClick18 === 1) {
+    CodeTxt18.style.height = '800px'
+    CodeImg18.style.height = '800px'
+    CodeTxt18.style.opacity = '1'
+    CodeImg18.style.opacity = '1'
+    LoginSwiper6.style.opacity = '1'
+    CodeClick18 = 0
+  }
+})
+
+
+
+
+
+
+
+
+
+
 // ================================================
 // ================================================
 /* 개인프로젝트 컨텐츠 1 */
