@@ -1056,8 +1056,8 @@ float: left;
   z-index: 4;
   opacity: 0;
   bottom: 13px;
-  left: 440px;
-  width: 120px;
+  left: 320px;
+  width: 350px;
   height: 40px;
   background-color: rgba(255,255,255,0.8);
   backdrop-filter:blur(3px);
@@ -1077,8 +1077,8 @@ float: left;
 .useSkill_close {
   position: absolute;
   top: -40px;
-  left: 420px;
-  width: 120px;
+  left: 300px;
+  width: 350px;
   height: 40px;
   border-radius: 10px 10px 0px 0px;
   background-color: rgba(255,255,255,0.8);
@@ -1288,10 +1288,6 @@ float: left;
   background-image: url(./BackImg/3.SingleSite/SingleSite_EventMobile.jpg);
 }
 
-
-
-
-
 .CodeReview_TabBox4 .CodeReview_img {
   height: 3300px;
   background-image: url(./BackImg/TaemSiteImg.jpg);
@@ -1315,26 +1311,50 @@ float: left;
   border: 1px solid #fff;
   box-sizing: border-box;
   background-color: #000;
+  text-align: center;
 }
 .CodeReview_TabBox_Btn input {
   display: none;
 }
 
 .CodeReview_TabBox_Btn label {
-  font-size: 16px;
+  display: inline-block;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
   box-sizing: border-box;
-
+  width: 220px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .CodeReview_TabBox_Btn label:hover {
   color: skyblue;
   border-radius: 5px;
+  background-color: #111;
 }
 .CodeReview_TabBox_Btn label:hover a {
   color: skyblue;
   border-radius: 5px;
 }
+
+
+label[for="CodeBtn2"],
+label[for="CodeBtn6"],
+label[for="CodeBtn10"],
+label[for="CodeBtn13"] {
+  color: orange;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+label[for="CodeBtn2"]:hover,
+label[for="CodeBtn6"]:hover,
+label[for="CodeBtn10"]:hover,
+label[for="CodeBtn13"]:hover {
+  background-color: #111;
+  color: orange;
+}
+
 
 
 
@@ -1388,6 +1408,10 @@ float: left;
 .TeamPageBtnBox label,
 .ReactPageBtnBox label {
   font-size: 12px;
+  width: 150px;
+  background-color: unset;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .SinglePageBtnBox h2 {
@@ -1510,6 +1534,14 @@ float: left;
   cursor: pointer;
   margin-bottom: 25px;
 }
+.code_content_tit h1 span {
+  width: 150px;
+  display: flex;
+  color: #000;
+  justify-content: space-between;
+  color: #000;
+  
+}
 .code_content_tit h1 span i {
   font-size: 50px;
   color: #000;
@@ -1520,6 +1552,21 @@ float: left;
   padding: 20px;
   box-sizing: border-box;
 }
+
+
+.code_content .fa-caret-up:hover {
+  color: orangered;
+}
+.code_content .fa-caret-up:hover ~  .code_content span {
+  color: orangered;
+}
+.code_content .fa-caret-down:hover {
+  color:cornflowerblue;
+}
+.code_content .fa-caret-down:hover ~ .code_content span {
+  color:cornflowerblue;
+}
+
 
 
 .code_content_img_Ranking1,
@@ -1781,16 +1828,17 @@ float: left;
 .SINGLE_Swiper1 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single1-1.jpg);}
 .SINGLE_Swiper1 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single1.jpg);}
 
-.SINGLE_Swiper2 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single2-1.jpg);}
-.SINGLE_Swiper2 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single2.jpg);}
+.SINGLE_Swiper3 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single2-1.jpg);}
+.SINGLE_Swiper3 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single2.jpg);}
 
-.SINGLE_Swiper3 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single3-1.gif);}
-.SINGLE_Swiper3 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single3.jpg);}
-.SINGLE_Swiper3 .swiper-slide{background-position: center;}
-
-.SINGLE_Swiper4 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single4-1.gif);}
-.SINGLE_Swiper4 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single4.jpg);}
+.SINGLE_Swiper4 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single3-1.gif);}
+.SINGLE_Swiper4 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single3.jpg);}
 .SINGLE_Swiper4 .swiper-slide{background-position: center;}
+
+.SINGLE_Swiper2 .swiper-slide:nth-child(1) {background-image: url(./BackImg/CodeImg/3.Single/Single4-1.gif);}
+.SINGLE_Swiper2 .swiper-slide:nth-child(2) {background-image: url(./BackImg/CodeImg/3.Single/Single4.jpg);
+  background-size: 97%;}
+.SINGLE_Swiper2 .swiper-slide{background-position: center;}
 
 /* ======================================================================= */
 /* ======================================================================= */

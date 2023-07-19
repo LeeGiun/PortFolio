@@ -366,7 +366,7 @@ headerMenuLI.forEach((li, index) => {
   const CodeBtnAll = [
     document.querySelector('#CodeBtn2'),
     document.querySelector('#CodeBtn6'),
-    document.querySelector('#CodeBtn9'),
+    document.querySelector('#CodeBtn10'),
     document.querySelector('#CodeBtn13')
   ];
   
@@ -383,6 +383,10 @@ headerMenuLI.forEach((li, index) => {
       PageCloseAll[index].style.display = 'none';
     });
   });
+
+
+
+
   
 
 
@@ -478,25 +482,29 @@ headerMenuLI.forEach((li, index) => {
   
 
 
-/* 
-  useSkillClose.addEventListener('click', function() {
-    useSkill.style.bottom = '-200px'
-    useSkill.style.opacity = '0'
-    useSkill.style.zIndex = '1'
-    useSkillOpen[0].style.opacity = '1'
-    useSkillOpen[0].style.bottom = '13px'
-    useSkillOpen[0].style.zIndex = '2'
-  }) */
-/* 
-  useSkillOpen.addEventListener('click', function() {
-    useSkill.style.bottom = '13px'
-    useSkill.style.opacity = '1'
-    useSkill.style.zIndex = '2'
-    useSkillOpen[0].style.opacity = '0'
-    useSkillOpen[0].style.bottom = '200px'
-    useSkillOpen[0].style.zIndex = '1'
-  })
- */
+
+  const ArrowHoverSpan = document.querySelectorAll('.code_content span');
+
+  ArrowHoverSpan.forEach((span) => {
+    span.addEventListener('mouseover', () => {
+      if (span.querySelector('.fa-caret-up')) {
+        span.style.color = 'orangered';
+        span.querySelector('.fa-caret-up').style.color = 'orangered';
+      } else if (span.querySelector('.fa-caret-down')) {
+        span.style.color = 'cornflowerblue';
+        span.querySelector('.fa-caret-down').style.color = 'cornflowerblue';
+      }
+    });
+  
+    span.addEventListener('mouseleave', () => {
+      span.style.color = '#000';
+      if (span.querySelector('.fa-caret-up')) {
+        span.querySelector('.fa-caret-up').style.color = '#000';
+      } else if (span.querySelector('.fa-caret-down')) {
+        span.querySelector('.fa-caret-down').style.color = '#000';
+      }
+    });
+  });
 
 
 
@@ -525,25 +533,30 @@ const CodeImg1 = document.querySelector('.code_content_img_Ranking1')
 const CodeTxt1 = document.querySelector('.code_content_txt_Ranking1')
 
 const CodeTit1 = document.querySelector('.tit_Ranking h1')
+const CodeTit1_Span = document.querySelector('.tit_Ranking h1 span')
 
 const TeamSwiper = document.querySelector('.TEAM_Swiper')
-let CodeClick = 0
+let CodeClick1 = 0
 
 CodeTit1.addEventListener('click', function () {
-  if (CodeClick === 0) {
+  if (CodeClick1 === 0) {
     CodeTxt1.style.height = '0px'
     CodeImg1.style.height = '0px'
     CodeTxt1.style.opacity = '0'
     CodeImg1.style.opacity = '0'
     TeamSwiper.style.opacity = '0'
-    CodeClick = 1
-  } else if (CodeClick === 1) {
+    CodeTit1_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit1_Span.style.color = '#000'
+    CodeClick1 = 1
+  } else if (CodeClick1 === 1) {
     CodeTxt1.style.height = '800px'
     CodeImg1.style.height = '800px'
     CodeTxt1.style.opacity = '1'
     CodeImg1.style.opacity = '1'
     TeamSwiper.style.opacity = '1'
-    CodeClick = 0
+    CodeTit1_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit1_Span.style.color = '#000'
+    CodeClick1 = 0
   }
 })
 
@@ -570,6 +583,7 @@ const CodeImg2 = document.querySelector('.code_content_img_SubItem1')
 const CodeTxt2 = document.querySelector('.code_content_txt_SubItem1')
 
 const CodeTit2 = document.querySelector('.tit_SubItem h1')
+const CodeTit2_Span = document.querySelector('.tit_SubItem h1 span')
 
 const SubSwiper = document.querySelector('.SUB_Swiper')
 let CodeClick2 = 0
@@ -581,6 +595,8 @@ CodeTit2.addEventListener('click', function () {
     CodeTxt2.style.opacity = '0'
     CodeImg2.style.opacity = '0'
     SubSwiper.style.opacity = '0'
+    CodeTit2_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit2_Span.style.color = '#000'
     CodeClick2 = 1
   } else if (CodeClick2 === 1) {
     CodeTxt2.style.height = '800px'
@@ -588,9 +604,13 @@ CodeTit2.addEventListener('click', function () {
     CodeTxt2.style.opacity = '1'
     CodeImg2.style.opacity = '1'
     SubSwiper.style.opacity = '1'
+    CodeTit2_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit2_Span.style.color = '#000'
     CodeClick2 = 0
   }
 })
+
+
 
 
 // ====================================
@@ -619,6 +639,7 @@ const CodeImg3 = document.querySelector('.code_content_img_Fillter1')
 const CodeTxt3 = document.querySelector('.code_content_txt_Fillter1')
 
 const CodeTit3 = document.querySelector('.tit_Fillter h1')
+const CodeTit3_Span = document.querySelector('.tit_Fillter h1 span')
 
 const FillterSwiper = document.querySelector('.FILLTER_Swiper')
 let CodeClick3 = 0
@@ -630,6 +651,8 @@ CodeTit3.addEventListener('click', function () {
     CodeTxt3.style.opacity = '0'
     CodeImg3.style.opacity = '0'
     FillterSwiper.style.opacity = '0'
+    CodeTit3_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit3_Span.style.color = '#000'
     CodeClick3 = 1
   } else if (CodeClick3 === 1) {
     CodeTxt3.style.height = '800px'
@@ -637,6 +660,8 @@ CodeTit3.addEventListener('click', function () {
     CodeTxt3.style.opacity = '1'
     CodeImg3.style.opacity = '1'
     FillterSwiper.style.opacity = '1'
+    CodeTit3_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit3_Span.style.color = '#000'
     CodeClick3 = 0
   }
 })
@@ -666,6 +691,7 @@ const CodeImg4 = document.querySelector('.code_content_img_Review1')
 const CodeTxt4 = document.querySelector('.code_content_txt_Review1')
 
 const CodeTit4 = document.querySelector('.tit_Review h1')
+const CodeTit4_Span = document.querySelector('.tit_Review h1 span')
 
 const ReviewSwiper = document.querySelector('.REVIEW_Swiper')
 let CodeClick4 = 0
@@ -677,6 +703,8 @@ CodeTit4.addEventListener('click', function () {
     CodeTxt4.style.opacity = '0'
     CodeImg4.style.opacity = '0'
     ReviewSwiper.style.opacity = '0'
+    CodeTit4_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit4_Span.style.color = '#000'
     CodeClick4 = 1
   } else if (CodeClick4 === 1) {
     CodeTxt4.style.height = '800px'
@@ -684,6 +712,8 @@ CodeTit4.addEventListener('click', function () {
     CodeTxt4.style.opacity = '1'
     CodeImg4.style.opacity = '1'
     ReviewSwiper.style.opacity = '1'
+    CodeTit4_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit4_Span.style.color = '#000'
     CodeClick4 = 0
   }
 })
@@ -712,6 +742,7 @@ const CodeImg5 = document.querySelector('.code_content_img_Login1')
 const CodeTxt5 = document.querySelector('.code_content_txt_Login1')
 
 const CodeTit5 = document.querySelector('.tit_Login1 h1')
+const CodeTit5_Span = document.querySelector('.tit_Login1 h1 span')
 
 const LoginSwiper1 = document.querySelector('.LOGIN_Swiper1')
 let CodeClick5 = 0
@@ -723,6 +754,8 @@ CodeTit5.addEventListener('click', function () {
     CodeTxt5.style.opacity = '0'
     CodeImg5.style.opacity = '0'
     LoginSwiper1.style.opacity = '0'
+    CodeTit5_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit5_Span.style.color = '#000'
     CodeClick5 = 1
   } else if (CodeClick5 === 1) {
     CodeTxt5.style.height = '800px'
@@ -730,9 +763,14 @@ CodeTit5.addEventListener('click', function () {
     CodeTxt5.style.opacity = '1'
     CodeImg5.style.opacity = '1'
     LoginSwiper1.style.opacity = '1'
+    CodeTit5_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit5_Span.style.color = '#000'
     CodeClick5 = 0
   }
 })
+
+
+
 
 
 // =======================================
@@ -758,6 +796,7 @@ const CodeImg6 = document.querySelector('.code_content_img_Login2')
 const CodeTxt6 = document.querySelector('.code_content_txt_Login2')
 
 const CodeTit6 = document.querySelector('.tit_Login2 h1')
+const CodeTit6_Span = document.querySelector('.tit_Login2 h1 span')
 
 const LoginSwiper2 = document.querySelector('.LOGIN_Swiper2')
 let CodeClick6 = 0
@@ -769,6 +808,8 @@ CodeTit6.addEventListener('click', function () {
     CodeTxt6.style.opacity = '0'
     CodeImg6.style.opacity = '0'
     LoginSwiper2.style.opacity = '0'
+    CodeTit6_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit6_Span.style.color = '#000'
     CodeClick6 = 1
   } else if (CodeClick6 === 1) {
     CodeTxt6.style.height = '800px'
@@ -776,6 +817,8 @@ CodeTit6.addEventListener('click', function () {
     CodeTxt6.style.opacity = '1'
     CodeImg6.style.opacity = '1'
     LoginSwiper2.style.opacity = '1'
+    CodeTit6_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit6_Span.style.color = '#000'
     CodeClick6 = 0
   }
 })
@@ -803,6 +846,7 @@ const CodeImg7 = document.querySelector('.code_content_img_Login3')
 const CodeTxt7 = document.querySelector('.code_content_txt_Login3')
 
 const CodeTit7 = document.querySelector('.tit_Login3 h1')
+const CodeTit7_Span = document.querySelector('.tit_Login3 h1 span')
 
 const LoginSwiper3 = document.querySelector('.LOGIN_Swiper3')
 let CodeClick7 = 0
@@ -814,6 +858,8 @@ CodeTit7.addEventListener('click', function () {
     CodeTxt7.style.opacity = '0'
     CodeImg7.style.opacity = '0'
     LoginSwiper3.style.opacity = '0'
+    CodeTit7_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit7_Span.style.color = '#000'
     CodeClick7 = 1
   } else if (CodeClick7 === 1) {
     CodeTxt7.style.height = '800px'
@@ -821,6 +867,8 @@ CodeTit7.addEventListener('click', function () {
     CodeTxt7.style.opacity = '1'
     CodeImg7.style.opacity = '1'
     LoginSwiper3.style.opacity = '1'
+    CodeTit7_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit7_Span.style.color = '#000'
     CodeClick7 = 0
   }
 })
@@ -850,6 +898,7 @@ const CodeImg8 = document.querySelector('.code_content_img_Login4')
 const CodeTxt8 = document.querySelector('.code_content_txt_Login4')
 
 const CodeTit8 = document.querySelector('.tit_Login4 h1')
+const CodeTit8_Span = document.querySelector('.tit_Login4 h1 span')
 
 const LoginSwiper4 = document.querySelector('.LOGIN_Swiper4')
 let CodeClick8 = 0
@@ -861,6 +910,8 @@ CodeTit8.addEventListener('click', function () {
     CodeTxt8.style.opacity = '0'
     CodeImg8.style.opacity = '0'
     LoginSwiper4.style.opacity = '0'
+    CodeTit8_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit8_Span.style.color = '#000'
     CodeClick8 = 1
   } else if (CodeClick8 === 1) {
     CodeTxt8.style.height = '800px'
@@ -868,6 +919,8 @@ CodeTit8.addEventListener('click', function () {
     CodeTxt8.style.opacity = '1'
     CodeImg8.style.opacity = '1'
     LoginSwiper4.style.opacity = '1'
+    CodeTit8_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit8_Span.style.color = '#000'
     CodeClick8 = 0
   }
 })
@@ -899,6 +952,7 @@ const CodeImg17 = document.querySelector('.code_content_img_Login5')
 const CodeTxt17 = document.querySelector('.code_content_txt_Login5')
 
 const CodeTit17 = document.querySelector('.tit_Login5 h1')
+const CodeTit17_Span = document.querySelector('.tit_Login5 h1 span')
 
 const LoginSwiper5 = document.querySelector('.LOGIN_Swiper5')
 let CodeClick17 = 0
@@ -910,6 +964,8 @@ CodeTit17.addEventListener('click', function () {
     CodeTxt17.style.opacity = '0'
     CodeImg17.style.opacity = '0'
     LoginSwiper5.style.opacity = '0'
+    CodeTit17_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit17_Span.style.color = '#000'
     CodeClick17 = 1
   } else if (CodeClick17 === 1) {
     CodeTxt17.style.height = '800px'
@@ -917,6 +973,8 @@ CodeTit17.addEventListener('click', function () {
     CodeTxt17.style.opacity = '1'
     CodeImg17.style.opacity = '1'
     LoginSwiper5.style.opacity = '1'
+    CodeTit17_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit17_Span.style.color = '#000'
     CodeClick17 = 0
   }
 })
@@ -949,6 +1007,7 @@ const CodeImg18 = document.querySelector('.code_content_img_Login6')
 const CodeTxt18 = document.querySelector('.code_content_txt_Login6')
 
 const CodeTit18 = document.querySelector('.tit_Login6 h1')
+const CodeTit18_Span = document.querySelector('.tit_Login6 h1 span')
 
 const LoginSwiper6 = document.querySelector('.LOGIN_Swiper6')
 let CodeClick18 = 0
@@ -960,6 +1019,8 @@ CodeTit18.addEventListener('click', function () {
     CodeTxt18.style.opacity = '0'
     CodeImg18.style.opacity = '0'
     LoginSwiper6.style.opacity = '0'
+    CodeTit18_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit18_Span.style.color = '#000'
     CodeClick18 = 1
   } else if (CodeClick18 === 1) {
     CodeTxt18.style.height = '800px'
@@ -967,6 +1028,8 @@ CodeTit18.addEventListener('click', function () {
     CodeTxt18.style.opacity = '1'
     CodeImg18.style.opacity = '1'
     LoginSwiper6.style.opacity = '1'
+    CodeTit18_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit18_Span.style.color = '#000'
     CodeClick18 = 0
   }
 })
@@ -1003,6 +1066,7 @@ const CodeImg9 = document.querySelector('.code_content_img_Single1')
 const CodeTxt9 = document.querySelector('.code_content_txt_Single1')
 
 const CodeTit9 = document.querySelector('.tit_Single1 h1')
+const CodeTit9_Span = document.querySelector('.tit_Single1 h1 span')
 
 const SingleSwiper1 = document.querySelector('.SINGLE_Swiper1')
 let CodeClick9 = 0
@@ -1014,6 +1078,8 @@ CodeTit9.addEventListener('click', function () {
     CodeTxt9.style.opacity = '0'
     CodeImg9.style.opacity = '0'
     SingleSwiper1.style.opacity = '0'
+    CodeTit9_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit9_Span.style.color = '#000'
     CodeClick9 = 1
   } else if (CodeClick9 === 1) {
     CodeTxt9.style.height = '800px'
@@ -1021,10 +1087,11 @@ CodeTit9.addEventListener('click', function () {
     CodeTxt9.style.opacity = '1'
     CodeImg9.style.opacity = '1'
     SingleSwiper1.style.opacity = '1'
+    CodeTit9_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit9_Span.style.color = '#000'
     CodeClick9 = 0
   }
 })
-
 
 
 
@@ -1047,32 +1114,36 @@ function SINGLESWP2() {
 SINGLESWP2();
 
 
-const CodeImg10 = document.querySelector('.code_content_img_Single2')
-const CodeTxt10 = document.querySelector('.code_content_txt_Single2')
+const CodeImg12 = document.querySelector('.code_content_img_Single2')
+const CodeTxt12 = document.querySelector('.code_content_txt_Single2')
 
-const CodeTit10 = document.querySelector('.tit_Single2 h1')
+const CodeTit12 = document.querySelector('.tit_Single2 h1')
+const CodeTit12_Span = document.querySelector('.tit_Single2 h1 span')
 
 const SingleSwiper2 = document.querySelector('.SINGLE_Swiper2')
-let CodeClick10 = 0
+let CodeClick12 = 0
 
-CodeTit10.addEventListener('click', function () {
-  if (CodeClick10 === 0) {
-    CodeTxt10.style.height = '0px'
-    CodeImg10.style.height = '0px'
-    CodeTxt10.style.opacity = '0'
-    CodeImg10.style.opacity = '0'
+CodeTit12.addEventListener('click', function () {
+  if (CodeClick12 === 0) {
+    CodeTxt12.style.height = '0px'
+    CodeImg12.style.height = '0px'
+    CodeTxt12.style.opacity = '0'
+    CodeImg12.style.opacity = '0'
     SingleSwiper2.style.opacity = '0'
-    CodeClick10 = 1
-  } else if (CodeClick10 === 1) {
-    CodeTxt10.style.height = '800px'
-    CodeImg10.style.height = '800px'
-    CodeTxt10.style.opacity = '1'
-    CodeImg10.style.opacity = '1'
+    CodeTit12_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit12_Span.style.color = '#000'
+    CodeClick12 = 1
+  } else if (CodeClick12 === 1) {
+    CodeTxt12.style.height = '800px'
+    CodeImg12.style.height = '800px'
+    CodeTxt12.style.opacity = '1'
+    CodeImg12.style.opacity = '1'
     SingleSwiper2.style.opacity = '1'
-    CodeClick10 = 0
+    CodeTit12_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit12_Span.style.color = '#000'
+    CodeClick12 = 0
   }
 })
-
 
 
 
@@ -1097,29 +1168,34 @@ function SINGLESWP3() {
 SINGLESWP3();
 
 
-const CodeImg11 = document.querySelector('.code_content_img_Single3')
-const CodeTxt11 = document.querySelector('.code_content_txt_Single3')
+const CodeImg10 = document.querySelector('.code_content_img_Single3')
+const CodeTxt10 = document.querySelector('.code_content_txt_Single3')
 
-const CodeTit11 = document.querySelector('.tit_Single3 h1')
+const CodeTit10 = document.querySelector('.tit_Single3 h1')
+const CodeTit10_Span = document.querySelector('.tit_Single3 h1 span')
 
 const SingleSwiper3 = document.querySelector('.SINGLE_Swiper3')
-let CodeClick11 = 0
+let CodeClick10 = 0
 
-CodeTit11.addEventListener('click', function () {
-  if (CodeClick11 === 0) {
-    CodeTxt11.style.height = '0px'
-    CodeImg11.style.height = '0px'
-    CodeTxt11.style.opacity = '0'
-    CodeImg11.style.opacity = '0'
+CodeTit10.addEventListener('click', function () {
+  if (CodeClick10 === 0) {
+    CodeTxt10.style.height = '0px'
+    CodeImg10.style.height = '0px'
+    CodeTxt10.style.opacity = '0'
+    CodeImg10.style.opacity = '0'
     SingleSwiper3.style.opacity = '0'
-    CodeClick11 = 1
-  } else if (CodeClick11 === 1) {
-    CodeTxt11.style.height = '800px'
-    CodeImg11.style.height = '800px'
-    CodeTxt11.style.opacity = '1'
-    CodeImg11.style.opacity = '1'
+    CodeTit10_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit10_Span.style.color = '#000'
+    CodeClick10 = 1
+  } else if (CodeClick10 === 1) {
+    CodeTxt10.style.height = '800px'
+    CodeImg10.style.height = '800px'
+    CodeTxt10.style.opacity = '1'
+    CodeImg10.style.opacity = '1'
     SingleSwiper3.style.opacity = '1'
-    CodeClick11 = 0
+    CodeTit10_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit10_Span.style.color = '#000'
+    CodeClick10 = 0
   }
 })
 
@@ -1147,31 +1223,40 @@ function SINGLESWP4() {
 SINGLESWP4();
 
 
-const CodeImg12 = document.querySelector('.code_content_img_Single4')
-const CodeTxt12 = document.querySelector('.code_content_txt_Single4')
+const CodeImg11 = document.querySelector('.code_content_img_Single4')
+const CodeTxt11 = document.querySelector('.code_content_txt_Single4')
 
-const CodeTit12 = document.querySelector('.tit_Single4 h1')
+const CodeTit11 = document.querySelector('.tit_Single4 h1')
+const CodeTit11_Span = document.querySelector('.tit_Single4 h1 span')
 
 const SingleSwiper4 = document.querySelector('.SINGLE_Swiper4')
-let CodeClick12 = 0
+let CodeClick11 = 0
 
-CodeTit12.addEventListener('click', function () {
-  if (CodeClick12 === 0) {
-    CodeTxt12.style.height = '0px'
-    CodeImg12.style.height = '0px'
-    CodeTxt12.style.opacity = '0'
-    CodeImg12.style.opacity = '0'
+CodeTit11.addEventListener('click', function () {
+  if (CodeClick11 === 0) {
+    CodeTxt11.style.height = '0px'
+    CodeImg11.style.height = '0px'
+    CodeTxt11.style.opacity = '0'
+    CodeImg11.style.opacity = '0'
     SingleSwiper4.style.opacity = '0'
-    CodeClick12 = 1
-  } else if (CodeClick12 === 1) {
-    CodeTxt12.style.height = '800px'
-    CodeImg12.style.height = '800px'
-    CodeTxt12.style.opacity = '1'
-    CodeImg12.style.opacity = '1'
+    CodeTit11_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit11_Span.style.color = '#000'
+    CodeClick11 = 1
+  } else if (CodeClick11 === 1) {
+    CodeTxt11.style.height = '800px'
+    CodeImg11.style.height = '800px'
+    CodeTxt11.style.opacity = '1'
+    CodeImg11.style.opacity = '1'
     SingleSwiper4.style.opacity = '1'
-    CodeClick12 = 0
+    CodeTit11_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit11_Span.style.color = '#000'
+    CodeClick11 = 0
   }
 })
+
+
+
+
 
 
 
@@ -1205,6 +1290,7 @@ const CodeImg13 = document.querySelector('.code_content_img_React1')
 const CodeTxt13 = document.querySelector('.code_content_txt_React1')
 
 const CodeTit13 = document.querySelector('.tit_React1 h1')
+const CodeTit13_Span = document.querySelector('.tit_React1 h1 span')
 
 const ReactSwiper1 = document.querySelector('.REACT_Swiper1')
 let CodeClick13 = 0
@@ -1216,6 +1302,8 @@ CodeTit13.addEventListener('click', function () {
     CodeTxt13.style.opacity = '0'
     CodeImg13.style.opacity = '0'
     ReactSwiper1.style.opacity = '0'
+    CodeTit13_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit13_Span.style.color = '#000'
     CodeClick13 = 1
   } else if (CodeClick13 === 1) {
     CodeTxt13.style.height = '800px'
@@ -1223,6 +1311,8 @@ CodeTit13.addEventListener('click', function () {
     CodeTxt13.style.opacity = '1'
     CodeImg13.style.opacity = '1'
     ReactSwiper1.style.opacity = '1'
+    CodeTit13_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit13_Span.style.color = '#000'
     CodeClick13 = 0
   }
 })
@@ -1253,6 +1343,7 @@ const CodeImg14 = document.querySelector('.code_content_img_React2')
 const CodeTxt14 = document.querySelector('.code_content_txt_React2')
 
 const CodeTit14 = document.querySelector('.tit_React2 h1')
+const CodeTit14_Span = document.querySelector('.tit_React2 h1 span')
 
 const ReactSwiper2 = document.querySelector('.REACT_Swiper2')
 let CodeClick14 = 0
@@ -1264,6 +1355,8 @@ CodeTit14.addEventListener('click', function () {
     CodeTxt14.style.opacity = '0'
     CodeImg14.style.opacity = '0'
     ReactSwiper2.style.opacity = '0'
+    CodeTit14_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit14_Span.style.color = '#000'
     CodeClick14 = 1
   } else if (CodeClick14 === 1) {
     CodeTxt14.style.height = '800px'
@@ -1271,6 +1364,8 @@ CodeTit14.addEventListener('click', function () {
     CodeTxt14.style.opacity = '1'
     CodeImg14.style.opacity = '1'
     ReactSwiper2.style.opacity = '1'
+    CodeTit14_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit14_Span.style.color = '#000'
     CodeClick14 = 0
   }
 })
@@ -1305,6 +1400,7 @@ const CodeImg15 = document.querySelector('.code_content_img_React3')
 const CodeTxt15 = document.querySelector('.code_content_txt_React3')
 
 const CodeTit15 = document.querySelector('.tit_React3 h1')
+const CodeTit15_Span = document.querySelector('.tit_React3 h1 span')
 
 const ReactSwiper3 = document.querySelector('.REACT_Swiper3')
 let CodeClick15 = 0
@@ -1316,6 +1412,8 @@ CodeTit15.addEventListener('click', function () {
     CodeTxt15.style.opacity = '0'
     CodeImg15.style.opacity = '0'
     ReactSwiper3.style.opacity = '0'
+    CodeTit15_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit15_Span.style.color = '#000'
     CodeClick15 = 1
   } else if (CodeClick15 === 1) {
     CodeTxt15.style.height = '800px'
@@ -1323,6 +1421,8 @@ CodeTit15.addEventListener('click', function () {
     CodeTxt15.style.opacity = '1'
     CodeImg15.style.opacity = '1'
     ReactSwiper3.style.opacity = '1'
+    CodeTit15_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit15_Span.style.color = '#000'
     CodeClick15 = 0
   }
 })
@@ -1355,6 +1455,7 @@ const CodeImg16 = document.querySelector('.code_content_img_React4')
 const CodeTxt16 = document.querySelector('.code_content_txt_React4')
 
 const CodeTit16 = document.querySelector('.tit_React4 h1')
+const CodeTit16_Span = document.querySelector('.tit_React4 h1 span')
 
 const ReactSwiper4 = document.querySelector('.REACT_Swiper4')
 let CodeClick16 = 0
@@ -1366,6 +1467,8 @@ CodeTit16.addEventListener('click', function () {
     CodeTxt16.style.opacity = '0'
     CodeImg16.style.opacity = '0'
     ReactSwiper4.style.opacity = '0'
+    CodeTit16_Span.innerHTML = `펼쳐보기<i class="fas fa-caret-down"></i>`;
+    CodeTit16_Span.style.color = '#000'
     CodeClick16 = 1
   } else if (CodeClick16 === 1) {
     CodeTxt16.style.height = '800px'
@@ -1373,15 +1476,86 @@ CodeTit16.addEventListener('click', function () {
     CodeTxt16.style.opacity = '1'
     CodeImg16.style.opacity = '1'
     ReactSwiper4.style.opacity = '1'
+    CodeTit16_Span.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+    CodeTit16_Span.style.color = '#000'
     CodeClick16 = 0
   }
 })
 
 
 
+const CodeSwiperAll = [
+  TeamSwiper, SubSwiper, FillterSwiper, ReviewSwiper,
+  LoginSwiper1, LoginSwiper2, LoginSwiper3,
+  LoginSwiper4, LoginSwiper5, LoginSwiper6,
+  SingleSwiper1, SingleSwiper2, SingleSwiper3, SingleSwiper4,
+  ReactSwiper1, ReactSwiper2, ReactSwiper3, ReactSwiper4
+  ]
+
+  const CodeTxtAll = [
+    CodeTxt1, CodeTxt2, CodeTxt3, CodeTxt4,
+    CodeTxt5, CodeTxt6, CodeTxt7, CodeTxt8,
+    CodeTxt9, CodeTxt10, CodeTxt11, CodeTxt12,
+    CodeTxt13, CodeTxt14, CodeTxt15, CodeTxt16,
+    CodeTxt17, CodeTxt18
+  ]
+
+  const CodeImgAll = [
+    CodeImg1, CodeImg2, CodeImg3, CodeImg4,
+    CodeImg5, CodeImg6, CodeImg7, CodeImg8,
+    CodeImg9, CodeImg10, CodeImg11, CodeImg12,
+    CodeImg13, CodeImg14, CodeImg15, CodeImg16,
+    CodeImg17, CodeImg18
+  ]
+  const CodeSpanAll = [
+    CodeTit1_Span, CodeTit2_Span, CodeTit3_Span,
+    CodeTit4_Span, CodeTit5_Span, CodeTit6_Span,
+    CodeTit7_Span, CodeTit8_Span, CodeTit9_Span,
+    CodeTit10_Span, CodeTit11_Span, CodeTit12_Span,
+    CodeTit13_Span, CodeTit14_Span, CodeTit15_Span,
+    CodeTit16_Span, CodeTit17_Span, CodeTit18_Span,
+  ]
 
 
 
+
+  PageCloseAll.forEach((TapOpen, index) => {
+    TapOpen.addEventListener('click', () => {
+      CodeTxtAll.forEach((element) => {
+        element.style.height = '800px';
+        element.style.opacity = '1';
+      });
+      CodeImgAll.forEach((element) => {
+        element.style.height = '800px';
+        element.style.opacity = '1';
+      });
+      CodeSwiperAll.forEach((element) => {
+        element.style.opacity = '1';
+      });
+      CodeSpanAll.forEach((element) => {
+        element.innerHTML = `접어두기<i class="fas fa-caret-up"></i>`;
+        element.style.color = '#000';
+      });
+      CodeClick1 = 0;
+      CodeClick2 = 0;
+      CodeClick3 = 0;
+      CodeClick4 = 0;
+      CodeClick5 = 0;
+      CodeClick6 = 0;
+      CodeClick7 = 0;
+      CodeClick8 = 0;
+      CodeClick9 = 0;
+      CodeClick10 = 0;
+      CodeClick11 = 0;
+      CodeClick12 = 0;
+      CodeClick13 = 0;
+      CodeClick14 = 0;
+      CodeClick15 = 0;
+      CodeClick16 = 0;
+      CodeClick17 = 0;
+      CodeClick18 = 0;
+    });
+  });
 
 
 
