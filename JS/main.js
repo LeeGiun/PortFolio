@@ -451,7 +451,7 @@ headerMenuLI.forEach((li, index) => {
         Box.style.opacity = '0'
         Box.style.zIndex = '1'
         useSkillOpen[i].style.opacity = '1'
-        useSkillOpen[i].style.bottom = '13px'
+        useSkillOpen[i].style.bottom = '14px'
         useSkillOpen[i].style.zIndex = '2'
       })
     })
@@ -460,7 +460,7 @@ headerMenuLI.forEach((li, index) => {
   useSkillOpen.forEach((open, index) => {
     open.addEventListener('click', function() {
       useSkill.forEach((Box2, j) => {
-        Box2.style.bottom = '13px'
+        Box2.style.bottom = '14px'
         Box2.style.opacity = '1'
         Box2.style.zIndex = '2'
         useSkillOpen[j].style.opacity = '0'
